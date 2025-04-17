@@ -7,6 +7,8 @@ const connectdb=require("./db/db-connect")
 const cookieParser=require("cookie-parser")
 const path=require('path')
 
+
+
 const cors = require('cors')
 
 
@@ -43,6 +45,8 @@ app.get("/",async(req,res)=>{
 
 //api route
 app.use(`/api/auth`,require('./route/auth.route'))
+app.use(`/api/book`,require('./route/book.route'))
+app.use(`/api/review`,require('./route/review.route'))
 
 //default routes
 app.all("/*",async(req,res)=>{

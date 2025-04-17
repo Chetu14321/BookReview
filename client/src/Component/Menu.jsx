@@ -36,7 +36,7 @@ import { toast } from "react-toastify";
        <>
         <nav className="navbar navbar-expand-md navbar-dark bg-secondary">
          <div className="container">
-            <NavLink className="navbar-brand" to={'/'}>Auth</NavLink> 
+            <NavLink className="navbar-brand" to={'/'}>Book Management System</NavLink> 
 
             <button className="btn btn-outline-dark" data-bs-toggle="offcanvas" data-bs-target="#menu" >
                 <span className="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@ import { toast } from "react-toastify";
 
         <div className="offcanvas offcanvas-end" id="menu">
             <div className="offcanvas-header">
-                <h3 className="offcanvas-title">Auth</h3>
+                <h3 className="offcanvas-title">Login/Signup</h3>
                 <button className="btn-close"data-bs-dismiss="offcanvas"></button>
             </div>
        

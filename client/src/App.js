@@ -12,6 +12,7 @@ import ProtectedRoute from "./AuthGuard/ProtectRoute";
 import AdminDashboard from "./Admin/AdminDashboard";
 import useAuth from "./Hooks/useAuth";
 import ForgotPassword from "./pages/Auth/ForgotPassword";
+import BookList from "./Book/bookList";
 
 
 
@@ -30,6 +31,12 @@ function App() {
             <Route path={"/dashboard/:role"} element={user?.role==="admin" ?<AdminDashboard/> :<Dashboard />} />
 
           </Route>
+
+          {/* import BookList from "./pages/Book/BookList"; */}
+
+          {/* <Route path="/booksDetails" element={<BookList />} /> */}
+          <Route path="/books/:id" element={<BookList /> } />
+
       
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -202,7 +202,17 @@ const updatePassController = async (req, res) => {
     }
 };
 
-module.exports={regController,loginController,verifyController,forgotPassController,updatePassController,logoutController}
+const getTotalUsersController = async (req, res) => {
+    try {
+        const totalUsers = await UserModel.find(); // Count all documents in the User collection
+        res.status(StatusCodes.OK).json({ totalUsers });
+    } catch (err) {
+        return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({ msg: err.message });
+    }
+};
+
+
+module.exports={getTotalUsersController,regController,loginController,verifyController,forgotPassController,updatePassController,logoutController}
 
 
 
