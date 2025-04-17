@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await axios.get("http://localhost:5300/api/book/all");
+        const res = await axios.get("/api/book/all");
         if (res.data && Array.isArray(res.data.allbooks)) {
           setBooks(res.data.allbooks);
         } else {
@@ -55,7 +55,7 @@ export default function Home() {
               <div className="card h-100 shadow-sm">
                 {/** Book Cover Image */}
                 <img
-                  src={book.image || "https://via.placeholder.com/300x200?text=No+Cover"}
+                  src={book.coverImage || "https://via.placeholder.com/300x200?text=No+Cover"}
                   alt={book.title}
                   className="card-img-top"
                   style={{ height: "250px", objectFit: "cover" }}

@@ -12,7 +12,7 @@ export default function UserDashboard() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await axios.get("http://localhost:5300/api/book/all");
+        const res = await axios.get("/api/book/all");
         if (res.data && Array.isArray(res.data.allbooks)) {
           setBooks(res.data.allbooks);
         } else {

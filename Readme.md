@@ -1,2 +1,7 @@
 # Authentication-API
-# LMS
+
+# This App  is complete Authentcation app 
+
+# Run command
+npm run dev beacause its in concurenenty
+
