@@ -72,7 +72,7 @@ export default function UserDashboard() {
               <div key={book._id} className="col-md-4 mb-4">
                 <div className="card h-100 shadow-sm">
                   <img
-                    src={book.image || "https://via.placeholder.com/300x200?text=No+Cover"}
+                    src={book.coverImage || "https://via.placeholder.com/300x200?text=No+Cover"}
                     alt={book.title}
                     className="card-img-top"
                     style={{ height: "250px", objectFit: "cover" }}
