@@ -29,7 +29,7 @@ const regController=async(req,res)=>{
         let temp=`<div>
         
         
-                <h1>Hi ${name} ,Thank You for registering in our portal</h1>
+                <h5>Hi ${name} ,Thank You for registering in our portal</h5>
         
                 <table>
                 <tr>    

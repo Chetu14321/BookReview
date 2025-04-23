@@ -32,13 +32,13 @@ export default function UserDashboard() {
     <div
       className="container-fluid"
       style={{
-        minHeight: "100vh", // Ensure it takes up full screen height
+        minHeight: "100vh", 
         background: "linear-gradient(135deg, #ff7e5f, #feb47b)", // Gradient background
         color: "black", // Change text color to black
         display: "flex", // Flexbox for layout
         flexDirection: "column", // Stack content vertically
-        justifyContent: "center", // Center content vertically
-        alignItems: "center", // Center content horizontally
+        justifyContent: "center", 
+        alignItems: "center", 
         padding: "0",
       }}
     >
